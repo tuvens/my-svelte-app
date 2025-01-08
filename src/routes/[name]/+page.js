@@ -1,3 +1,5 @@
+// Import the type definitions from SvelteKit
+/** @type {import('./$types').PageLoad} */
 export function load({ params }) {
     // Define valid names
     const validNames = ['jon', 'daenerys', 'arya'];
@@ -7,4 +9,3 @@ export function load({ params }) {
         name: validNames.includes(params.name?.toLowerCase()) ? params.name : 'Stranger'
     };
 }
-  
