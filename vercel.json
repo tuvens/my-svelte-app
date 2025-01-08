@@ -1,10 +1,5 @@
 {
-    "functions": {
-      "api/*": {
-        "runtime": "nodejs18.x"
-      }
-    },
-    "routes": [
+  "routes": [
       {
         "src": "/(.*)",
         "dest": "/"
