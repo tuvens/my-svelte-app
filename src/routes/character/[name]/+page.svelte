@@ -4,6 +4,11 @@
     // Log the raw value of `data.name`
     console.log('data.name:', data.name);
 
+    if (['weather', 'about', 'jokes'].includes(data.name?.toLowerCase() || '')) {
+    throw new Error(`${data.name} is not a valid dynamic route`);
+    }
+
+
     // Use a fallback name if "name" is undefined
     let name = data.name || 'Stranger';
 
@@ -11,10 +16,10 @@
     console.log('name:', name);
 
   let images: { [key: string]: string } = {
-    Jon: '/images/stark.jpg',
-    Daenerys: '/images/targaryen.jpg',
-    Arya: '/images/arya.jpg'
-};
+    jon: '/images/stark.jpg',
+    daenerys: '/images/targaryen.jpg',
+    arya: '/images/arya.jpg'
+  };
   
  // Default image if name not found
  let image = images[name.toLowerCase()] || '/images/stranger.jpg';

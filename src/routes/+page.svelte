@@ -10,9 +10,9 @@
 <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
 
 <ul>
-  <li><a href="/jon">Winterfell</a></li>
-  <li><a href="/arya">The Wall</a></li>
-  <li><a href="/daenerys">Dragonglass</a></li>
+  <li><a href="/character/jon">Winterfell</a></li>
+  <li><a href="/character/arya">The Wall</a></li>
+  <li><a href="/character/daenerys">Dragonglass</a></li>
 </ul>
 
 <button on:click={() => alert('Winter is coming!')}>

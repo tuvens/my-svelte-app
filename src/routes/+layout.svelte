@@ -9,7 +9,8 @@
     <nav>
       <a href="/">Home</a> | 
       <a href="/about">About</a> |
-      <a href="/jokes">Jokes</a>
+      <a href="/jokes">Jokes</a> |
+      <a href="/weather">Weather</a>
     </nav>
     <button on:click={() => $darkMode = !$darkMode}>
       Toggle {isDarkMode ? 'Dark' : 'Light'} Mode
